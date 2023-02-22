@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amiibo GameSeries Database</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="https://static.wikia.nocookie.net/diablo/images/8/87/Amiibo_Portal.png/revision/latest?cb=20180914120522" type="image/x-icon">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure class="header__figure">
+            <a href="index.html">
+                <img class="img--large cursor--pointer" id="mainImage" src="https://images.wikidexcdn.net/mwuploads/esssbwiki/thumb/3/35/latest/20151120180052/Logo_amiibo.png/1200px-Logo_amiibo.png" alt="amiibo-logo">
+            </a>
+        </figure>
+    </header>
+    <main id="main">
+        <article class="container" id="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="slide--figure">
+                            <img class="img--large" src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/portals_3/2x1_SuperMarioHub_image1600w.jpg" alt="marion-icon" id="marioImg">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide--figure">
+                            <img class="img--large" src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/portals_3/2x1_AnimalCrossingHub_image1600w.jpg" alt="anima-icon" id="animalImg">
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide--figure">
+                            <img class="img--large" src="https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/portals_3/SI_Hub_Zelda_Portal_image1600w.jpg" alt="zelda-icon" id="zeldaImg">
+                        </figure>
+                    </div>
+                </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

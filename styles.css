@@ -1,0 +1,119 @@
+/* NORMALIZE*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #EFEFEF;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* IMGS */
+.img--large{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* CURSOR */
+.cursor--pointer{
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.header__figure{
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+}
+
+/* CONTAINER */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+/* SWIPER */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide--figure{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.slide--figure:hover{
+    transform: scale(1.05);
+    transition: all .5s ease;
+}
+
+/* CARD CONTAINER */
+.cardContainer{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* STATES */
+.state--hidden{
+    display: none;
+}
+.card{
+    width: 300px;
+    height: max-content;
+    margin: 1rem;
+    padding: 3rem 2rem 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,.2);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 3.5rem;
+}
+.cardFigure{
+    height: 37rem;
+    width: 100%;
+}
+.cardImage{
+    width: 100%;
+    height: 100%;
+}
+.cardImage:hover{
+    transform: scale(1.02);
+    transition: all .5s ease;
+}
+
+.cardText{
+    font-size: 1.8rem;
+}
+.cardTitle{
+    font-size: 2.2rem;
+    text-align: center;
+    
+}
+.cardType{
+    margin-top: 2rem;
+}
+.cardSeries{
+    margin-top: .5rem;
+}
