@@ -117,3 +117,57 @@ html{
 .cardSeries{
     margin-top: .5rem;
 }
+.ammiboContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.buttonContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.button--pagination{
+    width: 20rem;
+    height: 4rem;
+    background-color: #cccccc;
+    border-radius: .7rem;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.button--pagination:hover{
+    background-color:  #87CEEB;
+}
+
+/* FOOTER */
+footer{
+    background-color: #333333;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 3rem 1.5rem;
+}
+.footer--images__figure{
+    width: 87%;
+    max-width: 300px;
+    margin: 1rem;
+}
+.footer__title{
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem;
+}
+.footer__text{
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 2.8rem;
+}
