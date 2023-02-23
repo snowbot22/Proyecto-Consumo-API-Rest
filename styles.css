@@ -54,15 +54,32 @@ html{
     align-items: center;
 }
 
+.swiper-button-next{
+    background-color: #333333;
+    margin: 0 2rem 0 0;
+    padding: 3rem;
+    border-radius: 50%;
+    display: none;
+}
+
+
+.swiper-button-prev{
+    background-color: #333333;
+    margin: 0 2rem 0 0;
+    padding: 3rem;
+    border-radius: 50%;
+}
+
 .slide--figure{
     cursor: pointer;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 .slide--figure:hover{
     transform: scale(1.05);
     transition: all .5s ease;
 }
+
 
 /* CARD CONTAINER */
 .cardContainer{
@@ -74,10 +91,6 @@ html{
 }
 
 
-/* STATES */
-.state--hidden{
-    display: none;
-}
 .card{
     width: 300px;
     height: max-content;
@@ -171,3 +184,41 @@ footer{
     color: #fff;
     line-height: 2.8rem;
 }
+
+/* MOBILE CONTAINER */
+.containerMobile{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.containerMobile__figure:hover{
+    transform: scale(1.05);
+    transition: all .5s ease;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:  425px){
+    .container{
+        display: none;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .containerMobile{
+        display: none;
+    }
+    .slide--figure{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .containerMobile{
+        display: none;
+    }
+}
+
+/* STATES */
+.state--hidden{
+    display: none;
+}
+

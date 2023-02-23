@@ -1,9 +1,13 @@
 //VARIABLES
 let mainImage = document.getElementById('mainImage');
 let container= document.getElementById('container');
+let mobileContainer= document.getElementById('mobileContainer');
 let marioImg = document.getElementById('marioImg');
 let zeldaImg = document.getElementById('zeldaImg');
 let animalImg = document.getElementById('animalImg');
+let marioImgMobile = document.getElementById('marioImgMobile');
+let zeldaImgMobile = document.getElementById('zeldaImgMobile');
+let animalImgMobile = document.getElementById('animalImgMobile');
 let main= document.getElementById('main');
 let amiibo;
 let counter= 0;
@@ -31,6 +35,7 @@ async function getAmiibos(gameSeries){
 
     //CLEAN CONTAINER
     container.classList.add('state--hidden');
+    mobileContainer.classList.add('state--hidden');
 
     //CREATING CONTAINER 
     let cardContainer = document.createElement('div');
@@ -175,6 +180,9 @@ function getAnimal(){
 marioImg.addEventListener('click', getMario);
 zeldaImg.addEventListener('click', getZelda);
 animalImg.addEventListener('click', getAnimal);
+marioImgMobile.addEventListener('click', getMario);
+zeldaImgMobile.addEventListener('click', getZelda);
+animalImgMobile.addEventListener('click', getAnimal);
 
 //CREATING CACHE
 if(window.caches){
@@ -183,6 +191,6 @@ if(window.caches){
     cache.add('https://www.amiiboapi.com/api/amiibo/?gameseries=The%20Legend%20of%20Zelda&limit=10');
     cache.add('https://www.amiiboapi.com/api/amiibo/?gameseries=Animal%20Crossing&limit=10');
   });
-
-
 }
+
+
